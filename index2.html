@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodak Studio — Al Masif | كوداك ستوديو — المصيف</title>
+    <!-- Tailwind CSS for high-fidelity responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Premium Fonts: Inter for English and IBM Plex Sans Arabic for crisp script integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { 
+            font-family: 'Inter', 'IBM Plex Sans Arabic', sans-serif; 
+            background-color: #f5f5f7; 
+        }
+        .apple-blur { 
+            backdrop-filter: blur(20px); 
+            -webkit-backdrop-filter: blur(20px); 
+        }
+        .text-gradient {
+            background: linear-gradient(180deg, #1d1d1f 0%, #6e6e73 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .arabic-text {
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+        }
+    </style>
+</head>
+<body class="text-[#1d1d1f] antialiased bg-[#f5f5f7]">
+
+    <!-- Apple-style Light Nav Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-white/80 apple-blur border-b border-gray-200/80 z-50">
+        <div class="max-w-[1024px] mx-auto h-12 flex items-center justify-between px-6 text-xs font-normal text-gray-500">
+            <div class="flex items-center space-x-1 font-bold text-[#1d1d1f] text-sm tracking-wider">
+                <span class="text-red-600">KODAK</span>
+                <span class="font-light text-gray-400">STUDIO</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-[11px] font-medium uppercase tracking-wider text-gray-600">
+                <a href="#services" class="hover:text-black transition">Services / الخدمات</a>
+                <a href="#pricing" class="hover:text-black transition">Pricing / الأسعار</a>
+                <a href="#location" class="hover:text-black transition">Location / الموقع</a>
+            </div>
+            <a href="https://wa.me/966561509685" target="_blank" class="bg-[#0071e3] hover:bg-[#147ce5] text-white px-4 py-1.5 rounded-full text-[11px] font-medium transition shadow-sm">
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Showcase Section -->
+    <section class="pt-32 pb-12 px-6 text-center max-w-4xl mx-auto">
+        <p class="text-xs font-semibold uppercase tracking-widest text-orange-600 mb-4">Al Masif, Riyadh | حي المصيف، الرياض</p>
+        
+        <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gradient mb-6 leading-tight">
+            Pro photography.<br class="hidden sm:inline"> Printed instantly.
+            <span class="block text-3xl md:text-5xl font-bold mt-4 arabic-text tracking-normal">تصوير احترافي. طباعة فورية.</span>
+        </h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mt-8 text-sm md:text-base text-gray-500 font-light leading-relaxed">
+            <div class="border-b md:border-b-0 md:border-r border-gray-200 pb-4 md:pb-0 md:pr-6">
+                Biometric-compliant document images captured with cinema-grade lighting. Tailored precisely to global passport and visa standards.
+            </div>
+            <div class="arabic-text pt-2 md:pt-0 md:pl-6 text-right md:text-left" dir="rtl">
+                صور وثائق ومطابقة للمعايير الحيوية بإضاءة سينمائية احترافية. متوافقة تماماً مع المواصفات الحكومية ومواصفات السفارات العالمية.
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Banner Graphic Grid -->
+    <section class="max-w-[1024px] mx-auto px-6 mb-12">
+        <div class="w-full h-64 md:h-96 rounded-2xl bg-cover bg-center overflow-hidden shadow-sm border border-gray-200/50" style="background-image: url('[attachment_0](attachment)');">
+            <div class="w-full h-full bg-gradient-to-t from-black/40 via-transparent to-transparent p-8 flex items-end">
+                <span class="text-white font-light text-sm tracking-wide opacity-90">Studio Studio Fine Lighting Systems — Al Masif</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bilingual Highlight Detail Cards -->
+    <section id="services" class="max-w-[1024px] mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl p-8 md:p-10 flex flex-col justify-between shadow-sm border border-gray-200/60 min-h-[300px]">
+            <div>
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">01 . Precision / دقة متناهية</span>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Official Document Standards</h3>
+                <p class="text-gray-500 font-light text-sm leading-relaxed mb-4">
+                    Perfect alignment, strict dimension validation, and seamless background control for absolute approval guaranteed.
+                </p>
+                <p class="text-gray-600 font-normal text-sm arabic-text leading-relaxed text-right" dir="rtl">
+                    مطابقة تامة للمواصفات، فحص دقيق للأبعاد، وخلفيات معتمدة لضمان القبول الرسمي لدى جميع الجهات والسفارات.
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl p-8 md:p-10 flex flex-col justify-between shadow-sm border border-gray-200/60 min-h-[300px]">
+            <div>
+                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider block mb-2">02 . Branding / الهوية الرقمية</span>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">LinkedIn & Digital Profiles</h3>
+                <p class="text-gray-500 font-light text-sm leading-relaxed mb-4">
+                    Crisp, modern corporate portraits styled carefully to emphasize your elite professional personal brand.
+                </p>
+                <p class="text-gray-600 font-normal text-sm arabic-text leading-relaxed text-right" dir="rtl">
+                    بورتريهات عمل حديثة ونقية مصممة بعناية لإبراز هويتك المهنية بشكل احترافي على المنصات الرقمية.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Clean Pricing Matrix -->
+    <section id="pricing" class="bg-white py-16 border-y border-gray-200 shadow-inner">
+        <div class="max-w-[850px] mx-auto px-6">
+            <div class="mb-12 flex flex-col sm:flex-row justify-between items-baseline border-b border-gray-200 pb-6">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900">Studio Pricing</h2>
+                    <p class="text-gray-400 font-light text-xs mt-1">Fixed structure, transparent billing rules.</p>
+                </div>
+                <div class="text-right mt-2 sm:mt-0" dir="rtl">
+                    <h2 class="text-xl md:text-2xl font-bold tracking-tight text-gray-900 arabic-text">قائمة أسعار الخدمات</h2>
+                    <p class="text-gray-400 font-light text-xs mt-1 arabic-text">أسعار ثابتة ومحددة بدون رسوم إضافية مخفية.</p>
+                </div>
+            </div>
+
+            <!-- Specs Grid Rows -->
+            <div class="divide-y divide-gray-100 font-normal">
+                
+                <!-- Item 1 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Passport Size Photo (4x6)</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة مقاس جواز السفر (٤×٦)</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">25 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Saudi ID Card Photo</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة الهوية الوطنية السعودية</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">25 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Schengen Visa Photo (3.5x4.5)</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة فيزا الشنغن (٣.٥×٤.٥)</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">25 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Syrian Passport Photo</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة جواز السفر السوري</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">25 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">USA Visa Photo (5x5)</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة فيزا أمريكا (٥×٥)</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">30 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">LinkedIn Profile Photo</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة الشخصية لينكد إن الرقمية</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">35 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+                <!-- Item 7 -->
+                <div class="py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between sm:justify-start sm:space-x-4">
+                            <span class="text-sm font-semibold text-gray-900">Canada Passport Photo</span>
+                            <span class="text-sm text-gray-500 arabic-text font-medium" dir="rtl">صورة جواز السفر الكندي</span>
+                        </div>
+                    </div>
+                    <div class="text-lg font-bold text-[#0071e3] whitespace-nowrap">45 SAR <span class="text-xs font-light text-gray-400 arabic-text">ريال</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Connected Contact Layout Section -->
+    <section id="location" class="max-w-[1024px] mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            
+            <!-- Exact Address Card -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-200/80 flex flex-col justify-between shadow-sm">
+                <div>
+                    <h3 class="text-xl font-bold tracking-tight mb-2">Visit Studio / تفضل بزيارتنا</h3>
+                    <p class="text-gray-500 text-sm font-light leading-relaxed mb-4">
+
+http://googleusercontent.com/map_location_reference/1
+                        [Photo Studio - استوديو تصوير](http://googleusercontent.com/map_location_reference/0)<br>
+                        3275 Ibn Sina, Al Masif District,<br>Riyadh 12465, Saudi Arabia
+                    </p>
+                    <p class="text-gray-700 text-sm font-medium arabic-text leading-relaxed text-right mb-6" dir="rtl">
+                        المصيف، شارع ابن سينا،<br>الرياض ١٢٤٦٥، المملكة العربية السعودية
+                    </p>
+                </div>
+                
+                <div class="border-t border-gray-100 pt-6 space-y-3 text-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400 font-light">Call Center / الهاتف:</span>
+                        <a href="tel:0561509685" class="text-[#0071e3] hover:underline font-medium">0561509685</a>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400 font-light">WhatsApp / واتساب:</span>
+                        <a href="https://wa.me/966561509685" target="_blank" class="text-green-600 hover:underline font-medium">Start Chat / ابدأ المحادثة</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apple Style Google Maps Interactive Redirector -->
+            <div class="bg-white rounded-2xl p-8 border border-gray-200/80 flex flex-col justify-center items-center text-center shadow-sm relative overflow-hidden group">
+                <div class="absolute inset-0 bg-cover bg-center filter blur-sm opacity-10 transition group-hover:scale-105 duration-500" style="background-image: url('[attachment_1](attachment)_2');"></div>
+                
+                <div class="relative z-10">
+                    <div class="bg-[#0071e3]/10 text-[#0071e3] p-4 rounded-full mb-4 inline-block">
+                        <i class="fas fa-location-dot text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-900 mb-1">Live Map Navigation</h4>
+                    <p class="text-xs text-gray-400 max-w-xs mb-6">Open your exact location pinned dynamically inside the Al Masif sector on Google Maps.</p>
+                    <a href="https://maps.app.goo.gl/W78nhufTMLXbsJB68" target="_blank" class="bg-gray-900 hover:bg-black text-white text-xs font-medium px-6 py-2.5 rounded-full transition shadow-sm inline-block">
+                        Open Google Maps / افتح الخريطة
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Apple Minimal Footnote Footer -->
+    <footer class="bg-[#f5f5f7] text-gray-400 text-[11px] py-12 px-6 border-t border-gray-200">
+        <div class="max-w-[1024px] mx-auto space-y-3 font-light leading-relaxed">
+            <p>1. Global regulatory parameters are modified in real-time syncing dynamically with 2026 biometric policy updates.</p>
+            <p dir="rtl" class="arabic-text text-right">١. يتم تحديث أبعاد ومعايير الصور تلقائياً للتوافق التام مع اشتراطات الأحوال المدنية والسفارات لعام ٢٠٢٦م.</p>
+            <div class="border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between text-gray-500 gap-2">
+                <div>Copyright © 2026 Kodak Photo Studio (Al Masif). All rights reserved.</div>
+                <div class="arabic-text" dir="rtl">حقوق الطبع محفوظة © ٢٠٢٦ ستوديو كوداك (المصيف).</div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
